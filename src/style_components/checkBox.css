@@ -1,0 +1,33 @@
+.checkBox {
+	display: flex;
+
+	height: 1.5em;
+	width: 1.5em;
+	cursor: pointer;
+	position: relative;
+}
+
+.checkBox input {
+	position: absolute;
+	transform: scale(0);
+	width: 100px;
+}
+
+.checkBox input:checked ~ .checkmark {
+	transform: rotate(45deg);
+	height: 2em;
+	width: 0.7em;
+	border-color: #1bfd9c;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	border-radius: 0;
+}
+
+.checkBox .checkmark {
+	display: block;
+	width: inherit;
+	height: inherit;
+	border: 2px solid #1bfd9c;
+	border-radius: 14px;
+	transition: all 0.3s;
+}
