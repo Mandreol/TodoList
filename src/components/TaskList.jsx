@@ -20,17 +20,13 @@ const TaskList = ({ list, setList }) => {
 	));
 
 	return (
-		<div>
-			<div className="todo-list">
-				{list.length ? tasks : "No tasks"}
-				{list.length ? (
-					<p>
-						<button className="button blue" onClick={onClickRemoveItem}>
-							Delete all done
-						</button>
-					</p>
-				) : null}
-			</div>
+		<div className="todo-list">
+			{list.length ? tasks : "No tasks"}
+			{list.length ? (
+				<button className="button checkBox-bottom" onClick={onClickRemoveItem}>
+					Delete all done
+				</button>
+			) : null}
 		</div>
 	);
 };

@@ -1,6 +1,10 @@
 .checkBox {
 	display: flex;
-
+	align-items: center;
+	gap: 1rem;
+}
+.checkBox__leable {
+	display: flex;
 	height: 1.5em;
 	width: 1.5em;
 	cursor: pointer;
@@ -30,4 +34,10 @@
 	border: 2px solid #1bfd9c;
 	border-radius: 14px;
 	transition: all 0.3s;
+}
+.todo__text {
+	text-align: end;
+}
+.checkBox-bottom {
+	width: 100%;
 }
