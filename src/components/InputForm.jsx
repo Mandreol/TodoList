@@ -22,7 +22,9 @@ const InputForm = ({ handleAddItem }) => {
 				onChange={(e) => setDescription(e.target.value)}
 			/>{" "}
 			<label className="user-label">Task</label>
-			<button className="button" disabled={description ? "" : "disabled"}>
+			<button
+				className="button add-button"
+				disabled={description ? "" : "disabled"}>
 				Add
 			</button>
 		</form>
